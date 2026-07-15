@@ -15,6 +15,11 @@ nav{
     padding: 19px 12px;
 }
 
+.logo img{
+    width: 15px;
+    filter: invert(1);
+}
+
 ul{
     display: flex;
 }
@@ -34,7 +39,27 @@ ul > li > a:hover{
 }
 
 main{
-    
+    min-height: 90vh;
+}
+
+.container{
+    background-color: azure;
+    max-width: 80vw;
+    margin: auto;
+    padding: 9px 15px;
+}
+
+.container h1{
+    padding: 12px 0;
+}
+
+.btn{
+    background: black;
+    color: white;
+    padding: 9px 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 footer{
@@ -45,4 +70,28 @@ footer{
     padding: 12px;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        font-size: 12px;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    .logo{
+        padding: 6px 0;
+        font-size: 12px;
+    }
+
+    .logo span{
+        font-size: 20px;
+    }
+
+    .logo img{
+        width: 15px;
+        filter: invert(1);
+    }
 }
