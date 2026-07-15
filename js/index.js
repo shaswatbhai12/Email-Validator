@@ -21,6 +21,7 @@ let result = {
 submitBtn.addEventListener("click",  async (e) => {
     e.preventDefault()
     console.log("clicked")
+    resultCont.innerHTML = `<img width="123px" src="img/loading.svg" alt="">`
     let key = "ema_live_5L0nS2bP2RYPinvYshQX2CcyetPqq7pVsh4nL63M"
     let email = document.getElementById("email").value
     let url = `https://api.emailvalidation.io/v1/info?apikey=${key}&email=${email}`
@@ -28,7 +29,9 @@ submitBtn.addEventListener("click",  async (e) => {
     let result = await res.json()
     let str = ``
     for (key of Object.keys(result)){
-        str = str + `<div>${key} : ${result[key]}</div>`
+        if (result[key] !== "" && result[key]!== " ") { 
+            str = str + `<div>${key} : ${result[key]}</div>`
+        }
     }
 
     console.log(str)
