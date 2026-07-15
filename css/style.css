@@ -43,7 +43,6 @@ main{
 }
 
 .container{
-    background-color: azure;
     max-width: 80vw;
     margin: auto;
     padding: 9px 15px;
@@ -53,6 +52,14 @@ main{
     padding: 12px 0;
 }
 
+input [type='email']{
+    min-width: 23vw;
+    padding: 3px 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
 .btn{
     background: black;
     color: white;
@@ -60,6 +67,10 @@ main{
     border: 1px solid gray;
     border-radius: 6px;
     cursor: pointer;
+}
+
+#resultCont div::first-letter{
+    text-transform: uppercase;
 }
 
 footer{

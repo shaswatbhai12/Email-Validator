@@ -23,13 +23,17 @@
     <main>
         <div class="container">
             <h1>Enter the Email to Validate</h1>
-            <form action="post">
-                <input class="btn" type="submit" value="Submit">
+            <form action="/submit" method="post">
+                <input placeholder="Enter your email to validate" type="email" name="email" id="email" required>
+                <br><br>
+                <input id="submitBtn" class="btn" type="submit" value="Submit">
             </form>
         </div>
         <div class="container">
             <h2>Your Results</h2>
-            <div></div>
+            <div id="resultCont">
+                Your results will sh
+            </div>
         </div>
     </main>
     <footer>
