@@ -32,3 +32,17 @@ ul li a{
 ul > li > a:hover{
     color: rgb(192, 189, 205);
 }
+
+main{
+    
+}
+
+footer{
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+}
